@@ -1,0 +1,3 @@
+SELECT COUNT(distinct ID) as count, SUBSTR(ID, 9, 4) as year FROM `gcp-cset-projects.rhetorical_frames.document_level_latest` WHERE ID LIKE "LBA%" GROUP BY year ORDER BY year
+SELECT COUNT(distinct ID) as count, SUBSTR(ID, 9, 4) as year FROM `gcp-cset-projects.rhetorical_frames.document_level_latest` WHERE ID LIKE "FRNA%" GROUP BY year ORDER BY year
+SELECT COUNT(DISTINCT ID), REGEXP_EXTRACT(Source_Link, "20[0-9][0-9]") as year FROM `gcp-cset-projects.rhetorical_frames.document_level_latest` as par INNER JOIN `gcp-cset-projects.defenseone_check_tmp.defenseone_file_list` as list on par.ID = list.ID_Name WHERE ID LIKE "Defense%" GROUP BY year ORDER BY YEAR

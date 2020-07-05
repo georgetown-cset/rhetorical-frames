@@ -1,0 +1,5 @@
+-- The FRNA prefix in IDs marks files from Foreign Affairs, and LBA marks files from Reuters, both of whom have IDs followed by their year.
+-- Defense One file IDs don't have their years in them and need to be checked against a separate dataset.
+SELECT COUNT(DISTINCT ID), SUBSTR(ID, 9, 4) as year FROM `gcp-cset-projects.rhetorical_frames.document_level_latest` WHERE ID LIKE "FRNA%" AND ContainsAI GROUP BY year ORDER BY year
+SELECT COUNT(DISTINCT ID), SUBSTR(ID, 9, 4) as year FROM `gcp-cset-projects.rhetorical_frames.document_level_latest` WHERE ID LIKE "LBA%" AND ContainsAI GROUP BY year ORDER BY year
+SELECT COUNT(DISTINCT ID), REGEXP_EXTRACT(Source_Link, "20[0-9][0-9]") as year FROM `gcp-cset-projects.rhetorical_frames.document_level_latest` as par INNER JOIN `gcp-cset-projects.defenseone_check_tmp.defenseone_file_list` as list on par.ID = list.ID_Name WHERE ID LIKE "Defense%" and ContainsAI GROUP BY year ORDER BY YEAR
