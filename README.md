@@ -23,9 +23,7 @@ we have not made it available directly here. However, we have included:
 
 2.) Our [annotation guide](Rhetorical_Frames_Annotation_Guidelines.pdf).
 
-3.) <Something here about ids of the metadata???>
-
-4.) The [queries](sql/) we performed on the metadata once it was loaded into BQ for analysis purposes.
+3.) The [queries](sql/) we performed on the metadata once it was loaded into BQ for analysis purposes.
 
 # Data Selection
 
@@ -37,9 +35,7 @@ Reuters and Foreign Affairs were both accessed using the Factiva datasource.
 
 We retrieved the Factiva results manually (clicking "RTF" -> "Article Format") and converted them to plain text with `textutil -convert txt ./*.rtf`.
 
-Once data was selected, it was prepared using the following script:
-
-`./process.py`
+Once data was selected, it was prepared using `data/process.py`.
 
 The annotation task includes paragraph classification, so that code splits the Reuters and Foreign Affairs text into paragraphs.
 This isn't necessary in the Defense One text, since its paragraph structure was preserved by the scraper.
