@@ -1,0 +1,100 @@
+active learning
+adaptive learning
+anomaly detection
+artificial intelligence
+associative learning
+autonomous navigation
+autonomous system[^\s]*
+autonomous vehicle[^\s]*
+average link clustering
+back propagation
+backpropagation
+binary classification
+bioNLP
+boltzmann machine
+character recognition
+classification algorithm
+classification label[^\s]*
+clustering method[^\s]*
+complete link clustering
+computer aided diagnosis
+computer vision
+deep learning
+ensemble learning
+evolutionary algorithm
+fac[^\s]+ expression recognition
+fac[^\s]+ identification
+fac[^\s]+ recognition
+feature extraction
+feature learning
+feature matching
+feature selection
+feature vector
+feedforward network
+feedforward neural network
+fuzzy clustering
+generative adversarial network
+gradient algorithm
+graph matching
+graphical model
+handwriting recognition
+hierarchical clustering
+hierarchical model
+human robot
+image annotation
+image classification
+image matching
+image processing
+image registration
+image representation
+image retrieval
+incremental clustering
+information extraction
+information fusion
+information retrieval
+k nearest neighbor
+knowledge based system[^\s]*
+knowledge discovery
+knowledge representation
+language identification
+machine learning
+machine perception
+machine translation
+multi class classification
+multi label classification
+multi task learning
+natural language generation
+natural language processing
+natural language understanding
+neural network
+object recognition
+one shot learning
+pattern matching
+pattern recognition
+random forest
+recommend[^\s]* system[^\s]*
+recurrent network
+reinforcement learning
+scene[^\s]* classification
+scene[^\s]* understanding
+self driving car[^\s]*
+semi supervised learning
+sentiment classification
+single link clustering
+spatial learning
+speech processing
+speech recognition
+speech synthesis
+statistical learning
+strong artificial intelligence
+supervised learning
+support vector machine
+text mining
+text processing
+transfer learning
+translation system
+unsupervised learning
+video classification
+video processing
+weak artificial intelligence
+zero shot learning

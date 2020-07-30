@@ -35,13 +35,11 @@ Defense One was scraped via Google Custom Search.
 
 Reuters and Foreign Affairs were both accessed using the Factiva datasource.
 
-Factiva produces results in RTF format; these results were converted to plaintext using the following command:
-
-`textutil -convert txt ./*.rtf`
+We retrieved the Factiva results manually (clicking "RTF" -> "Article Format") and converted them to plain text with `textutil -convert txt ./*.rtf`.
 
 Once data was selected, it was prepared using the following script:
 
-`./process_scraped.py`
+`./process.py`
 
 The annotation task includes paragraph classification, so that code splits the Reuters and Foreign Affairs text into paragraphs.
 This isn't necessary in the Defense One text, since its paragraph structure was preserved by the scraper.
@@ -51,6 +49,12 @@ The `text` value is an array of strings, one per paragraph.
 The `id` identifier for the Foreign Affairs and Reuters articles is the Factiva ID.
 For Foreign Affairs, it looks like `FRNA000020130302e9310000z`; for Reuters, `LBA0000020180523ee5n00j2h`.
 The Defense One `id` values are URLs.
+
+Result:
+
+* Foreign Affairs: 2,800 articles. 25th, 50th, and 75th percentile of article word counts are 267, 296, and 2969. Paragraphs, 10, 10, 33. ~4M total words.
+* Reuters: 7,701 articles. Words, 330, 574, and 957. Paragraphs, 15, 22, and 32. ~6.2M total words.
+* Defense One: 863 articles. Word count percentiles are 806, 1214, 1858; paragraphs 21, 25, 32. ~1.2M total words.
 
 # Annotation
 
