@@ -46,12 +46,6 @@ The `id` identifier for the Foreign Affairs and Reuters articles is the Factiva 
 For Foreign Affairs, it looks like `FRNA000020130302e9310000z`; for Reuters, `LBA0000020180523ee5n00j2h`.
 The Defense One `id` values are URLs.
 
-Result:
-
-* Foreign Affairs: 2,800 articles. 25th, 50th, and 75th percentile of article word counts are 267, 296, and 2969. Paragraphs, 10, 10, 33. ~4M total words.
-* Reuters: 7,701 articles. Words, 330, 574, and 957. Paragraphs, 15, 22, and 32. ~6.2M total words.
-* Defense One: 863 articles. Word count percentiles are 806, 1214, 1858; paragraphs 21, 25, 32. ~1.2M total words.
-
 # Annotation
 
 The results of the scraper were provided to annotators, who used the annotation guide
