@@ -11,7 +11,7 @@ Articles were included in the analysis from these sources if and only if they in
 `artificial intelligence` or `machine learning`.
 
 Articles were hand analyzed by annotators, who
-employed the [annotation guide](https://github.com/georgetown-cset/rhetorical-frames/blob/master/Appendix%20B%20-%20CSET%20Rhetorical%20Frames%20Issue%20Brief.pdf) to identify
+employed the [annotation guide](Appendix-B.pdf) to identify
 when, where, and how articles incorporated rhetorical frames to discuss
 artificial intelligence. This annotation effort produced the metadata which was
 used for the final analysis.
@@ -21,7 +21,7 @@ we have not made it available directly here. However, we have included:
 
 1.) Code to reproduce our process for extracting articles for annotation.
 
-2.) Our [annotation guide](https://github.com/georgetown-cset/rhetorical-frames/blob/master/Appendix%20B%20-%20CSET%20Rhetorical%20Frames%20Issue%20Brief.pdf).
+2.) Our [annotation guide](Appendix-B.pdf).
 
 3.) The [queries](sql/) we performed on the metadata once it was loaded into BQ for analysis purposes.
 
